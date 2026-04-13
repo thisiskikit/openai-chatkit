@@ -27,12 +27,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <head>
-        <script
-          src="https://cdn.platform.openai.com/deployments/chatkit/chatkit.js"
-          async
-        />
-      </head>
+      <head />
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
