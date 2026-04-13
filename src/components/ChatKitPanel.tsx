@@ -47,10 +47,12 @@ export function ChatKitPanel() {
 
   const chatkit = useChatKit({
     api: { getClientSecret },
-    attachments: {
-      enabled: true,
-      maxSize: 20 * 1024 * 1024, // 20MB
-      maxCount: 5,
+    composer: {
+      attachments: {
+        enabled: true,
+        maxSize: 20 * 1024 * 1024, // 20MB
+        maxCount: 5,
+      },
     },
   });
 
